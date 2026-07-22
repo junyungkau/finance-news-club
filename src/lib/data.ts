@@ -9,8 +9,9 @@
 // =============================================================================
 
 export const siteConfig = {
-  name: "My Project",
-  tagline: "Your tagline here",
-  description: "A modern landing page for your project, event, or campaign.",
+  name: "Current",
+  tagline: "금융과 시사를 함께 읽는 대학생 연합 동아리",
+  description:
+    "Current는 금융과 시사를 함께 배워가는 대학생 연합 금융시사 동아리입니다. 2026년 하반기 6기 신규 부원을 모집합니다.",
   url: "https://example.com",
 };
