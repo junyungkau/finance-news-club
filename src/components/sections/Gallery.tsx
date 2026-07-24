@@ -4,27 +4,27 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 const PHOTOS = [
   {
     gen: "1기",
-    image: "/images/activities/read-market-briefing.jpg",
+    image: "/images/gallery/gen-1.jpg",
     position: "col-start-1 row-start-1",
   },
   {
     gen: "2기",
-    image: "/images/activities/night-film.jpg",
+    image: "/images/gallery/gen-2.jpg",
     position: "col-start-2 col-span-2 row-start-1 row-span-2",
   },
   {
     gen: "3기",
-    image: "/images/activities/think-debate.jpg",
+    image: "/images/gallery/gen-3.jpg",
     position: "col-start-4 row-start-1",
   },
   {
     gen: "4기",
-    image: "/images/activities/grow-portfolio.jpg",
+    image: "/images/gallery/gen-4.jpg",
     position: "col-start-1 row-start-2",
   },
   {
     gen: "5기",
-    image: "/images/activities/night-quiz.jpg",
+    image: "/images/gallery/gen-5.jpg",
     position: "col-start-4 row-start-2",
   },
 ];
