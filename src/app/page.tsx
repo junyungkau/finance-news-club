@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { Intro } from "@/components/sections/Intro";
 import { About } from "@/components/sections/About";
 import { ReadThinkGrow } from "@/components/sections/ReadThinkGrow";
 import { Activities } from "@/components/sections/Activities";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Intro />
         <About />
         <ReadThinkGrow />
         <Activities />
