@@ -7,6 +7,7 @@ import { Activities } from "@/components/sections/Activities";
 import { Gallery } from "@/components/sections/Gallery";
 import { CurrentNight } from "@/components/sections/CurrentNight";
 import { ForYou } from "@/components/sections/ForYou";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { Apply } from "@/components/sections/Apply";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <Gallery />
         <CurrentNight />
         <ForYou />
+        <Testimonials />
         <Apply />
       </main>
       <Footer />
