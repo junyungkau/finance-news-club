@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR, Playfair_Display } from "next/font/google";
+import "@fontsource-variable/noto-sans-kr";
+import "@fontsource-variable/playfair-display";
+import "@fontsource-variable/playfair-display/wght-italic.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/lib/data";
@@ -10,20 +12,6 @@ import "./globals.css";
  *  Playfair Display — English editorial display headings
  *  ("are you financially ready?").
  * ───────────────────────────────────────────────────────────── */
-const fontSans = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const fontDisplay = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-  display: "swap",
-});
 
 /* ── SEO Metadata ─────────────────────────────────────
  *  1. .env.local의 NEXT_PUBLIC_SITE_URL을 실제 도메인으로 변경하세요.
@@ -81,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${fontSans.variable} ${fontDisplay.variable}`}>
+    <html lang="ko">
       <body className="font-sans">
         {children}
         <Analytics />
