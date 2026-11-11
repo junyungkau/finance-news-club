@@ -36,7 +36,7 @@ export function Navbar() {
             CURRENT
           </span>
           <span className="hidden text-xs font-medium tracking-wide text-brand-500 sm:inline">
-            6기 모집중
+            대학생 연합 금융시사 동아리
           </span>
         </a>
 
@@ -51,10 +51,10 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#apply"
+            href="#gallery"
             className="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-transform hover:scale-105"
           >
-            지원하기
+            활동 사진
           </a>
         </nav>
 
@@ -82,11 +82,11 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="#apply"
+              href="#gallery"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-ink px-5 py-3 text-center text-sm font-semibold text-cream"
             >
-              지원하기
+              활동 사진
             </a>
           </nav>
         </div>

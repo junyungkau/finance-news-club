@@ -53,7 +53,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 rounded-full bg-brand-900 px-4 py-1.5 text-xs font-semibold tracking-wide text-brand-100"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-brand-300" />
-          2026년 하반기 6기 신규부원 모집
+          함께 읽고, 생각하고, 성장하는 Current
         </motion.div>
 
         <motion.p
@@ -108,10 +108,10 @@ export function Hero() {
           className="mt-9 flex flex-wrap items-center gap-4"
         >
           <a
-            href="#apply"
+            href="#activities"
             className="rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-cream transition-transform hover:scale-105"
           >
-            지원하기
+            활동 살펴보기
           </a>
           <a
             href="#about"

@@ -6,7 +6,7 @@ export function Footer() {
           CURRENT
         </span>
         <p className="text-xs text-ink/45">
-          대학생 연합 금융시사 동아리 Current · 문의: current.club@example.com
+          대학생 연합 금융시사 동아리 Current
         </p>
       </div>
     </footer>

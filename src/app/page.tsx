@@ -9,7 +9,6 @@ import { Gallery } from "@/components/sections/Gallery";
 import { CurrentNight } from "@/components/sections/CurrentNight";
 import { ForYou } from "@/components/sections/ForYou";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { Apply } from "@/components/sections/Apply";
 
 export default function Home() {
   return (
@@ -25,7 +24,6 @@ export default function Home() {
         <CurrentNight />
         <ForYou />
         <Testimonials />
-        <Apply />
       </main>
       <Footer />
     </>

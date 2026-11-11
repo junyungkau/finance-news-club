@@ -59,14 +59,14 @@ export function ForYou() {
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             Current에는 <span className="text-brand-500">이런 분들</span>이
-            지원하시면 좋습니다
+            함께하면 좋습니다
           </h2>
         </AnimatedSection>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <AnimatedSection delay={0.1}>
             <ChecklistCard
-              title="이런 분들이 지원하시면 좋습니다"
+              title="이런 관심이 있다면 함께해요"
               items={APPLY_CHECKS}
               accent="bg-brand-500"
             />
