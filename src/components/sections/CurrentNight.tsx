@@ -7,7 +7,7 @@ const CARDS = [
     title: "현직자와의 대화",
     description: "금융권 현직자를 초청해 생생한 커리어 이야기를 듣습니다.",
     icon: Mic,
-    image: "/images/activities/night-talk.jpg",
+    image: "/images/retouched/night-talk-v2.webp",
     accent: "bg-brand-500",
   },
   {
@@ -21,7 +21,7 @@ const CARDS = [
     title: "금융 퀴즈",
     description: "그동안 배운 금융 지식을 퀴즈로 재미있게 복습합니다.",
     icon: Brain,
-    image: "/images/activities/night-quiz.jpg",
+    image: "/images/retouched/think-v2.webp",
     accent: "bg-accent-500",
   },
 ];

@@ -8,6 +8,9 @@ export function Footer() {
         <p className="text-xs text-ink/45">
           대학생 연합 금융시사 동아리 Current
         </p>
+        <p className="text-xs leading-relaxed text-ink/60">
+          활동 사진은 초상권 보호와 가독성을 위해 인물 및 일부 자료 화면을 AI로 보정했습니다.
+        </p>
       </div>
     </footer>
   );

@@ -4,12 +4,12 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 const PHOTOS = [
   {
     gen: "1기",
-    image: "/images/gallery/gen-1.jpg",
+    image: "/images/retouched/briefing-v2.webp",
     position: "col-start-1 row-start-1",
   },
   {
     gen: "2기",
-    image: "/images/gallery/gen-2.jpg",
+    image: "/images/retouched/book-talk-v2.webp",
     position: "col-start-2 col-span-2 row-start-1 row-span-2",
   },
   {
@@ -19,12 +19,12 @@ const PHOTOS = [
   },
   {
     gen: "4기",
-    image: "/images/gallery/gen-4.jpg",
+    image: "/images/retouched/read-v2.webp",
     position: "col-start-1 row-start-2",
   },
   {
     gen: "5기",
-    image: "/images/gallery/gen-5.jpg",
+    image: "/images/retouched/grow-v2.webp",
     position: "col-start-4 row-start-2",
   },
 ];

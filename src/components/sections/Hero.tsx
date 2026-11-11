@@ -107,12 +107,14 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-9 flex flex-wrap items-center gap-4"
         >
-          <a
-            href="#activities"
-            className="rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-cream transition-transform hover:scale-105"
+          <button
+            type="button"
+            disabled
+            title="지원 링크 준비 중"
+            className="cursor-not-allowed rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-cream opacity-60"
           >
-            활동 살펴보기
-          </a>
+            지원하기 · 준비 중
+          </button>
           <a
             href="#about"
             className="rounded-full border-2 border-ink px-7 py-3.5 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-cream"

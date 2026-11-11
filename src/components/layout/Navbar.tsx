@@ -50,12 +50,14 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#gallery"
-            className="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-transform hover:scale-105"
+          <button
+            type="button"
+            disabled
+            title="지원 링크 준비 중"
+            className="cursor-not-allowed rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream opacity-60"
           >
-            활동 사진
-          </a>
+            지원하기 · 준비 중
+          </button>
         </nav>
 
         <button
@@ -81,13 +83,14 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#gallery"
-              onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-ink px-5 py-3 text-center text-sm font-semibold text-cream"
+            <button
+              type="button"
+              disabled
+              title="지원 링크 준비 중"
+              className="mt-2 cursor-not-allowed rounded-full bg-ink px-5 py-3 text-center text-sm font-semibold text-cream opacity-60"
             >
-              활동 사진
-            </a>
+              지원하기 · 준비 중
+            </button>
           </nav>
         </div>
       )}

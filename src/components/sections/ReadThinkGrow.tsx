@@ -10,7 +10,7 @@ const CARDS = [
     description:
       "매주 경제 시사 이슈를 함께 읽고 정리하며, 세상을 읽는 기초 체력을 기릅니다.",
     icon: BookOpen,
-    image: "/images/activities/read-market-briefing.jpg",
+    image: "/images/retouched/read-v2.webp",
     accent: "bg-brand-500",
   },
   {
@@ -20,7 +20,7 @@ const CARDS = [
     description:
       "읽은 내용을 바탕으로 치열하게 토론하며, 나만의 관점과 논리를 만들어갑니다.",
     icon: MessagesSquare,
-    image: "/images/activities/think-debate.jpg",
+    image: "/images/retouched/think-v2.webp",
     accent: "bg-brand-400",
   },
   {
@@ -30,7 +30,7 @@ const CARDS = [
     description:
       "자산관리 프로젝트와 포트폴리오 설계로, 이론을 실전 감각으로 바꿉니다.",
     icon: Sprout,
-    image: "/images/activities/grow-portfolio.jpg",
+    image: "/images/retouched/grow-v2.webp",
     accent: "bg-accent-500",
   },
 ];
