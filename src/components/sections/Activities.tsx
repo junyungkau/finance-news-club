@@ -14,7 +14,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { AnimatedSection } from "@/components/ui/AnimatedSection";
+
 
 interface Activity {
   icon: LucideIcon;
@@ -116,61 +116,20 @@ const TABS = [
 export function Activities() {
   const [active, setActive] = useState(0);
   const tab = TABS[active];
-
   return (
-    <section id="activities" className="py-24 md:py-32">
+    <section id="activities" className="border-y border-ink/10 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <AnimatedSection>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-500">
-            activities
-          </p>
-          <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            Read <span className="text-brand-500">→</span> Think{" "}
-            <span className="text-brand-500">→</span> Grow
-          </h2>
-        </AnimatedSection>
-
-        <div className="mt-10 flex flex-wrap gap-3">
-          {TABS.map((t, i) => (
-            <button
-              key={t.key}
-              type="button"
-              onClick={() => setActive(i)}
-              className={cn(
-                "rounded-full px-6 py-2.5 text-sm font-semibold transition-colors",
-                active === i
-                  ? cn(t.pill, "text-white")
-                  : "border-2 border-ink/15 text-ink/70 hover:border-ink/30"
-              )}
-            >
-              {t.label}
-            </button>
-          ))}
+        <p className="text-xs font-semibold text-brand-600">02 / OUR PRACTICE</p>
+        <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-bold sm:text-5xl">Read <span className="text-brand-600">→</span> Think <span className="text-brand-600">→</span> Grow</h2>
+        <div className="mt-9 flex flex-wrap gap-2">
+          {TABS.map((t,i)=><button key={t.key} type="button" aria-pressed={active===i} aria-controls="activity-content" onClick={()=>setActive(i)} className={cn("border-b-2 px-4 py-3 text-sm font-semibold transition-colors",active===i?"border-brand-500 text-ink":"border-transparent text-ink/55 hover:border-ink/30")}>{t.label}</button>)}
         </div>
-
-        <div className="mt-10 grid gap-6 sm:grid-cols-3">
-          {tab.items.map(({ icon: Icon, title, subtitle, description }) => (
-            <div
-              key={title}
-              className="rounded-2xl border border-ink/10 bg-white p-7 transition-shadow hover:shadow-md"
-            >
-              <div
-                className={cn(
-                  "inline-flex h-12 w-12 items-center justify-center rounded-full text-white",
-                  tab.pill
-                )}
-              >
-                <Icon size={22} strokeWidth={1.75} />
-              </div>
-              <h3 className="mt-5 font-[family-name:var(--font-display)] text-lg font-bold text-ink">
-                {title}
-              </h3>
-              <p className="mt-1 text-sm font-semibold text-brand-500">{subtitle}</p>
-              <p className="mt-4 text-sm leading-relaxed text-ink/65">
-                {description}
-              </p>
-            </div>
-          ))}
+        <div id="activity-content" aria-live="polite" className="mt-8 min-h-[360px]">
+          {tab.items.map(({title,subtitle,description},i)=><article key={title} className="grid gap-4 border-t border-ink/20 py-7 md:grid-cols-[60px_1fr_1.2fr] md:gap-8">
+            <span className="font-[family-name:var(--font-display)] text-3xl text-brand-600">0{i+1}</span>
+            <div><h3 className="font-[family-name:var(--font-display)] text-xl font-bold">{title}</h3><p className="mt-2 text-sm text-ink/60">{subtitle}</p></div>
+            <p className="text-sm leading-7 text-ink/70">{description}</p>
+          </article>)}
         </div>
       </div>
     </section>

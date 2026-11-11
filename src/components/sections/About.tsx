@@ -1,45 +1,14 @@
-import { AnimatedSection } from "@/components/ui/AnimatedSection";
-
 export function About() {
   return (
-    <section id="about" className="py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
-        <AnimatedSection>
-          <p className="text-sm font-semibold lowercase tracking-[0.2em] text-brand-500">
-            about current
-          </p>
-          <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold leading-tight tracking-tight text-ink sm:text-5xl">
-            금융, 함께 배우면
-            <br />
-            <span className="text-brand-500">더 넓은 세상이 보입니다</span>
-          </h2>
-        </AnimatedSection>
-
-        <div className="mt-14 grid gap-10 md:grid-cols-2 md:gap-16">
-          <AnimatedSection delay={0.1}>
-            <p className="text-base leading-relaxed text-ink/70 md:text-lg">
-              Current는 금융과 시사를 함께 배워가는 대학생 연합 금융시사
-              동아리입니다. 매주 경제 뉴스를 읽고, 함께 토론하고, 직접 자산을
-              관리해보며 세상이 돌아가는 흐름을 읽는 눈을 키웁니다.
-            </p>
-          </AnimatedSection>
-          <AnimatedSection delay={0.2}>
-            <p className="text-base leading-relaxed text-ink/70 md:text-lg">
-              단순한 투자 동아리가 아닌, 금융을 배우고 성장하는 동아리입니다.
-              읽기(Read)에서 시작해 생각하기(Think)를 거쳐 성장하기(Grow)로
-              이어지는 커리큘럼으로, 누구나 금융 문해력을 갖춘 사회인으로
-              성장할 수 있도록 돕습니다.
-            </p>
-          </AnimatedSection>
+    <section id="about" className="bg-white py-16 md:py-24">
+      <div className="mx-auto grid max-w-6xl gap-8 px-6 md:grid-cols-[1fr_2fr] md:gap-16">
+        <p className="text-xs font-semibold text-brand-600">01 / ABOUT CURRENT</p>
+        <div>
+          <h2 className="text-2xl font-bold leading-relaxed md:text-4xl">잘 아는 사람들의 모임보다,<br /><span className="text-brand-600">함께 알아가는 모임.</span></h2>
+          <p className="mt-7 max-w-2xl text-base leading-8 text-ink/70">뉴스 속 금리와 환율이 낯설어도 괜찮습니다. Current는 금융과 시사를 함께 배워가는 대학생 연합 동아리입니다. 기사를 읽고, 질문을 나누고, 배운 내용을 일상에 연결합니다.</p>
+          <p className="mt-4 max-w-2xl text-base leading-8 text-ink/70">전공이나 투자 경험보다 궁금해하는 마음을 중요하게 생각합니다. 스펙을 넘어, 금융을 바라보는 나만의 시야를 넓혀갑니다.</p>
+          <div className="mt-8 border-l-2 border-brand-500 pl-5 text-sm leading-7 text-ink/60">돈의 흐름, 세상의 흐름,<br />우리는 CURRENT를 읽습니다.</div>
         </div>
-
-        <AnimatedSection delay={0.3}>
-          <div className="mt-16 rounded-3xl bg-accent-100 px-8 py-10 text-center md:px-16 md:py-14">
-            <p className="font-[family-name:var(--font-display)] text-2xl italic leading-snug text-accent-700 md:text-3xl">
-              &ldquo;돈의 흐름, 세상의 흐름, 우리는 CURRENT를 읽습니다&rdquo;
-            </p>
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   );

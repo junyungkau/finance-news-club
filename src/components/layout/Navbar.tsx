@@ -27,7 +27,7 @@ export function Navbar() {
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled
           ? "bg-cream/90 backdrop-blur-md border-b border-ink/10"
-          : "bg-transparent"
+          : "bg-cream/95 border-b border-ink/10"
       )}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -35,7 +35,7 @@ export function Navbar() {
           <span className="font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight text-ink">
             CURRENT
           </span>
-          <span className="hidden text-xs font-medium tracking-wide text-brand-500 sm:inline">
+          <span className="hidden text-xs font-medium text-brand-600 lg:inline">
             대학생 연합 금융시사 동아리
           </span>
         </a>

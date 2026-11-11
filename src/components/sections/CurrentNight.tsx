@@ -28,12 +28,12 @@ const CARDS = [
 
 export function CurrentNight() {
   return (
-    <section id="current-night" className="py-24 md:py-32">
+    <section id="current-night" className="border-y border-ink/10 py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <AnimatedSection>
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-pink-100 px-4 py-1.5 text-xs font-semibold text-pink-600">
-            <Star size={13} className="fill-pink-500 text-pink-500" />
-            SPECIAL
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-transparent px-4 py-1.5 text-xs font-semibold text-brand-600">
+            <Star size={13} className="text-brand-600" />
+            04 / AFTER HOURS
           </div>
           <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             Current Night
@@ -44,18 +44,18 @@ export function CurrentNight() {
         </AnimatedSection>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {CARDS.map(({ title, description, icon: Icon, image, accent }, i) => (
+          {CARDS.map(({ title, description, icon: Icon, image }, i) => (
             <AnimatedSection key={title} delay={i * 0.1}>
-              <div className="flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-sm">
+              <div className="flex h-full flex-col">
                 <div className="relative h-52 w-full">
-                  <Image src={image} alt={title} fill className="object-cover" />
+                  <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, 33vw" className="rounded-lg object-cover" />
                 </div>
-                <div className={`flex flex-1 flex-col gap-3 px-7 py-8 text-white ${accent}`}>
-                  <Icon size={26} strokeWidth={1.5} />
+                <div className="flex flex-1 flex-col gap-3 border-b border-ink/20 py-6 text-ink">
+                  <Icon size={22} strokeWidth={1.5} className="text-brand-600" />
                   <h3 className="font-[family-name:var(--font-display)] text-xl font-bold">
                     {title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-white/85">
+                  <p className="text-sm leading-7 text-ink/65">
                     {description}
                   </p>
                 </div>

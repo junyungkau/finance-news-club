@@ -1,7 +1,7 @@
-import { Quote } from "lucide-react";
-import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { Plus } from "lucide-react";
 
-const ACCENTS = ["bg-brand-500", "bg-brand-400", "bg-accent-500"];
+
+
 
 const TESTIMONIALS = [
   {
@@ -60,47 +60,21 @@ const TESTIMONIALS = [
 ];
 
 export function Testimonials() {
+  const highlights = ["아침에 경제 기사 하나 읽는 게 습관이 되었어요.", "금융이 세상을 이해하는 하나의 언어라는 걸 알게 됐어요.", "다양한 시각을 들으며 생각의 폭이 넓어졌어요.", "현실적인 이야기를 듣고 앞으로의 방향을 잡았어요.", "모르는 걸 부담 없이 질문할 수 있었어요.", "전공에서 배운 내용을 현실과 연결할 수 있었어요."];
   return (
-    <section id="testimonials" className="py-24 md:py-32">
+    <section id="testimonials" className="bg-white py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <AnimatedSection>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-500">
-            review
-          </p>
-          <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-ink sm:text-5xl">
-            실제 활동한 사람들의
-            <br />
-            <span className="text-brand-500">솔직한 후기</span>
-          </h2>
-          <p className="mt-4 max-w-xl text-base text-ink/60">
-            Current에서 함께 읽고, 생각하고, 성장한 부원들의 이야기를
-            들어보세요
-          </p>
-        </AnimatedSection>
-
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {TESTIMONIALS.map(({ name, major, paragraphs }, i) => (
-            <AnimatedSection key={name} delay={(i % 3) * 0.1}>
-              <div className="flex h-full flex-col rounded-3xl bg-white p-7 shadow-sm">
-                <span
-                  className={`inline-flex h-10 w-10 items-center justify-center rounded-full text-white ${ACCENTS[i % ACCENTS.length]}`}
-                >
-                  <Quote size={18} strokeWidth={2} className="fill-current" />
-                </span>
-                <div className="mt-5 space-y-3">
-                  {paragraphs.map((p, pi) => (
-                    <p key={pi} className="text-sm leading-relaxed text-ink/70">
-                      {p}
-                    </p>
-                  ))}
-                </div>
-                <div className="mt-6 flex items-baseline gap-2 border-t border-ink/10 pt-4">
-                  <span className="text-sm font-bold text-ink">{name}</span>
-                  <span className="text-xs text-ink/45">{major}</span>
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
+        <p className="text-xs font-semibold text-brand-600">05 / VOICES</p>
+        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">함께한 사람들의 이야기</h2>
+        <div className="mt-12 grid gap-x-12 sm:grid-cols-2">
+          {TESTIMONIALS.map(({name,major,paragraphs},i)=><article key={name} className="border-t border-ink/20 py-7">
+            <p className="text-lg font-medium leading-8">{highlights[i]}</p>
+            <details className="group mt-4">
+              <summary className="flex list-none items-center justify-between py-2 text-sm text-ink/60 [&::-webkit-details-marker]:hidden">후기 전문 <Plus size={16} className="transition-transform group-open:rotate-45" /></summary>
+              <div className="mt-4 space-y-3">{paragraphs.map(p=><p key={p} className="text-sm leading-7 text-ink/70">{p}</p>)}</div>
+            </details>
+            <p className="mt-5 text-sm font-semibold">{name}<span className="ml-3 font-normal text-ink/60">{major}</span></p>
+          </article>)}
         </div>
       </div>
     </section>
